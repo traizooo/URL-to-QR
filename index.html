@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>URL to QR Converter</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<head>
+  <title>URL to QR Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img src="bg4.jpg" alt="Background Image" class="bg">
+  <header>
     <h1>URL to QR Converter</h1>
-    <form action="https://url-to-qr-rrzz.onrender.com/convert" method="post">
-      <input type="text" name="url" placeholder="Enter URL" required>
+  </header>
+  <main>
+    <form id="converter-form" action="https://url-to-qr-rrzz.onrender.com/convert" method="post">
+      <input type="url" name="url" id="url-input" placeholder="Enter URL" required>
       <button type="submit">Convert</button>
     </form>
-  </body>
+  </main>
+  <script src="index.js"></script>
+</body>
 </html>
