@@ -18,7 +18,7 @@ app.post('/convert', (req, res) => {
   qrCode.pipe(res);
 });
 
-const port = 3000;
+const port = 3000 || process.env.PORT;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
